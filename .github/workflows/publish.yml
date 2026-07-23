@@ -1,9 +1,8 @@
-name: Publish Org-Roam Digital Garden
+name: Deploy Garden to Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -19,13 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Generate Org-Roam UI Site
-        uses: ikoamu/publish-org-roam-ui@main
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          org-roam-directory: org-files
-          org-roam-db-filename: org-roam.db
-          site-title: "Boluwaji's Knowledge Garden"
-          deploy-to-pages: true
+          path: '.'
+      - id: deploy
+        uses: actions/deploy-pages@v4

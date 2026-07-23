@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boluwaji's Knowledge Garden</title>
+<style>
+  :root {
+    --bg: #1d2021;
+    --bg-alt: #282828;
+    --fg: #ebdbb2;
+    --fg-alt: #a89984;
+    --red: #fb4934;
+    --green: #b8bb26;
+    --yellow: #fabd2f;
+    --blue: #83a598;
+    --purple: #d3869b;
+    --aqua: #8ec07c;
+    --orange: #fe8019;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Latin Modern Roman', Georgia, serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem; }
+  h1 {
+    font-size: 2.2rem;
+    color: var(--aqua);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .subtitle { color: var(--fg-alt); font-size: 1.1rem; margin-bottom: 2.5rem; }
+  h2 {
+    color: var(--blue);
+    font-size: 1.3rem;
+    margin: 2rem 0 0.8rem;
+    font-weight: 500;
+  }
+  p { margin-bottom: 1rem; }
+  a { color: var(--yellow); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .card {
+    background: var(--bg-alt);
+    border-left: 3px solid var(--blue);
+    padding: 1.2rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .card.math { border-left-color: var(--purple); }
+  .card.notes { border-left-color: var(--green); }
+  .card.tools { border-left-color: var(--orange); }
+  .card h3 { color: var(--fg); margin-bottom: 0.4rem; font-size: 1.05rem; }
+  .card p { color: var(--fg-alt); margin: 0; font-size: 0.95rem; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin: 1rem 0; }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+  .dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background: var(--aqua);
+  }
+  .dot.math { background: var(--purple); }
+  .dot.notes { background: var(--green); }
+  .dot.tools { background: var(--orange); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--bg-alt);
+    color: var(--fg-alt);
+    font-size: 0.85rem;
+  }
+  .status { color: var(--green); font-weight: 500; }
+  code {
+    background: var(--bg-alt);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Knowledge Garden</h1>
+<p class="subtitle">An interactive graph of everything I'm learning — Computer Science,
+Mathematics, and the science of learning itself.</p>
+
+<h2>Sites</h2>
+<div class="grid">
+  <a href="https://boluwajioadepojuworkp.github.io/study-notes/" style="text-decoration:none">
+    <div class="card notes">
+      <h3><span class="dot notes"></span> Study Notes</h3>
+      <p>Full knowledge base — courses, methods, references. Built with Quartz.</p>
+    </div>
+  </a>
+  <a href="https://boluwajioadepojuworkp.github.io/study-notes/math/" style="text-decoration:none">
+    <div class="card math">
+      <h3><span class="dot math"></span> Math Reference</h3>
+      <p>Algebra, Calculus I-III, Differential Equations. Paul's Notes.</p>
+    </div>
+  </a>
+</div>
+
+<h2>How I Take Notes</h2>
+<div class="card tools">
+  <h3><span class="dot tools"></span> The Neuper Method — Adapted</h3>
+  <p>I use <strong>Doom Emacs</strong> with <strong>Org-Roam</strong>, following
+  Michael Neuper's CS note-taking method: listen during lecture, write from
+  memory afterwards, link every concept. Notes sync to an interactive graph
+  (coming soon).</p>
+</div>
+
+<h2>Key Bindings (Emacs)</h2>
+<table style="width:100%; border-collapse:collapse; color:var(--fg); margin:1rem 0;">
+<tr><td style="padding:4px 12px 4px 0"><code>SPC r f</code></td><td>Find any note</td></tr>
+<tr><td style="padding:4px 12px 4px 0"><code>SPC r c m</code></td><td>New math note</td></tr>
+<tr><td style="padding:4px 12px 4px 0"><code>SPC r c j</code></td><td>Today's daily note</td></tr>
+<tr><td style="padding:4px 12px 4px 0"><code>SPC r c c</code></td><td>New course index</td></tr>
+<tr><td style="padding:4px 12px 4px 0"><code>SPC r u</code></td><td>Open graph visualization</td></tr>
+<tr><td style="padding:4px 12px 4px 0"><code>SPC r s</code></td><td>Search all notes</td></tr>
+<tr><td style="padding:4px 12px 4px 0"><code>SPC r e</code></td><td>Export to Quartz</td></tr>
+</table>
+
+<h2>Repositories</h2>
+<div class="grid">
+  <a href="https://github.com/boluwajioadepojuworkp/study-notes">
+    <div class="card notes" style="margin:0"><h3>study-notes</h3><p>Quartz knowledge graph source</p></div>
+  </a>
+  <a href="https://github.com/boluwajioadepojuworkp/doom-config">
+    <div class="card tools" style="margin:0"><h3>doom-config</h3><p>Emacs + Org-Roam setup</p></div>
+  </a>
+  <a href="https://github.com/boluwajioadepojuworkp/math-notes">
+    <div class="card math" style="margin:0"><h3>math-notes</h3><p>Paul's Notes reference</p></div>
+  </a>
+  <a href="https://github.com/boluwajioadepojuworkp/latex-templates">
+    <div class="card" style="margin:0"><h3>latex-templates</h3><p>Academic document templates</p></div>
+  </a>
+</div>
+
+<footer>
+  <p><span class="status">●</span> Garden active — Updated 2026-07-23</p>
+  <p>Built with plain HTML. Org-Roam interactive graph coming when the database is live.</p>
+</footer>
+
+</div>
+</body>
+</html>
