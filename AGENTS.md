@@ -22,7 +22,7 @@ cd publish-org-roam-ui
 Push to `main`. GitHub Actions builds the site and deploys to:
 `https://boluwajioadepojuworkp.github.io/notes-garden/`
 
-## Note Workflow (Neuper Method)
+## Note Workflow
 1. Take notes in Emacs with Org-Roam (`~/Notes/`)
 2. After editing, sync the DB: `M-x org-roam-db-sync`
 3. Copy notes to garden: `cp ~/Notes/*.org org-files/`
