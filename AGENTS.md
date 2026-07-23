@@ -1,10 +1,10 @@
-# AGENTS.md — Notes Garden (Org-Roam Digital Garden)
+# AGENTS.md: Notes Garden (Org-Roam Digital Garden)
 
 ## Repository Layout
-- `org-files/` — Org-Roam notes in `.org` format. This is the content.
-- `org-files/org-roam.db` — Org-Roam SQLite database (auto-generated, committed for publishing).
-- `org-files/img/` — Images referenced in notes.
-- `.github/workflows/publish.yml` — GitHub Action that builds and deploys the interactive site.
+- `org-files/`: Org-Roam notes in `.org` format. This is the content.
+- `org-files/org-roam.db`: Org-Roam SQLite database (auto-generated, committed for publishing).
+- `org-files/img/`: Images referenced in notes.
+- `.github/workflows/publish.yml`: GitHub Action that builds and deploys the interactive site.
 
 ## Building and Testing
 ```bash
