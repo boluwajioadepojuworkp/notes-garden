@@ -1,0 +1,50 @@
+#+title: Mathematics Reference Index
+#+filetags: :math:index:
+#+date: 2026-07-23
+
+This index mirrors the Paul's Notes structure. Each node is an atomic concept
+connected to others via [[id:][wikilinks]].
+
+* Algebra
+- [[id:][Exponents]]
+- [[id:][Polynomials]]
+- [[id:][Factoring]]
+- [[id:][Rational Expressions]]
+- [[id:][Complex Numbers]]
+- [[id:][Logarithms]]
+- [[id:][Systems of Equations]]
+
+* Calculus I
+- [[id:][Limits]]
+- [[id:][Derivatives]]
+- [[id:][Applications of Derivatives]]
+- [[id:][Integrals]]
+- [[id:][Applications of Integrals]]
+
+* Calculus II
+- [[id:][Integration Techniques]]
+- [[id:][Improper Integrals]]
+- [[id:][Sequences and Series]]
+- [[id:][Parametric Equations]]
+- [[id:][Polar Coordinates]]
+
+* Calculus III
+- [[id:][3D Coordinate System]]
+- [[id:][Partial Derivatives]]
+- [[id:][Multiple Integrals]]
+- [[id:][Line Integrals]]
+- [[id:][Surface Integrals]]
+- [[id:][Vector Calculus]]
+
+* Differential Equations
+- [[id:][First Order DE]]
+- [[id:][Second Order DE]]
+- [[id:][Laplace Transforms]]
+- [[id:][Systems of DE]]
+- [[id:][Series Solutions]]
+
+* Cheat Sheets
+- [[id:][Trig Cheat Sheet]]
+- [[id:][Derivatives Cheat Sheet]]
+- [[id:][Integrals Cheat Sheet]]
+- [[id:][Common Limits]]

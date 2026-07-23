@@ -1,0 +1,31 @@
+name: Publish Org-Roam Digital Garden
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Org-Roam UI Site
+        uses: ikoamu/publish-org-roam-ui@main
+        with:
+          org-roam-directory: org-files
+          org-roam-db-filename: org-roam.db
+          site-title: "Boluwaji's Knowledge Garden"
+          deploy-to-pages: true

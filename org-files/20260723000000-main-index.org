@@ -1,0 +1,48 @@
+#+title: Main Index
+#+filetags: :index:
+#+date: 2026-07-23
+
+This is the central hub of my knowledge graph. Each course, topic, and concept
+links back here.
+
+* Year 1 (Completed)
+** Semester 1
+- [[id:][Programmazione 1]]
+- [[id:][Architettura degli Elaboratori]]
+- [[id:][Matematica Discreta]]
+** Semester 2
+- [[id:][Programmazione 2]]
+- [[id:][Algoritmi e Strutture Dati]]
+- [[id:][Basi di Dati]]
+
+* Year 2 (Current)
+** Semester 1
+- [[id:][Ingegneria del Software]]
+- [[id:][Sistemi Operativi]]
+- [[id:][Reti di Calcolatori]]
+** Semester 2
+- [[id:][Gestione dell'Emergenza]]
+- [[id:][Machine Learning]]
+- [[id:][Tirocinio / Progetto]]
+
+* Mathematics Reference
+- [[id:][Algebra]]
+- [[id:][Calculus I]]
+- [[id:][Calculus II]]
+- [[id:][Calculus III]]
+- [[id:][Differential Equations]]
+- [[id:][Cheat Sheets]]
+
+* Study System
+- [[id:][COME STUDIARE — The Method]]
+- [[id:][Spaced Repetition]]
+- [[id:][Retrieval Practice]]
+- [[id:][Dual Coding]]
+- [[id:][Elaboration]]
+- [[id:][Interleaving]]
+- [[id:][Concrete Examples]]
+
+* Projects
+- [[id:][LLaMA / Transformers — Gruppo 3]]
+- [[id:][Escape Room Outdoor]]
+- [[id:][Note-Writing System]]
