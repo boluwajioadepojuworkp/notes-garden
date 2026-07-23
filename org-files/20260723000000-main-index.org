@@ -34,7 +34,7 @@ links back here.
 - [[id:][Cheat Sheets]]
 
 * Study System
-- [[id:][COME STUDIARE — The Method]]
+- [[id:][COME STUDIARE : The Method]]
 - [[id:][Spaced Repetition]]
 - [[id:][Retrieval Practice]]
 - [[id:][Dual Coding]]
@@ -43,6 +43,6 @@ links back here.
 - [[id:][Concrete Examples]]
 
 * Projects
-- [[id:][LLaMA / Transformers — Gruppo 3]]
+- [[id:][LLaMA / Transformers : Gruppo 3]]
 - [[id:][Escape Room Outdoor]]
 - [[id:][Note-Writing System]]
